@@ -1,0 +1,518 @@
+/* Global Styles */
+
+html {
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+
+p::selection { background: #D5E7E9; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Merriweather', serif;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+p , span {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+strong {
+  font-weight: bold;
+}
+
+nav {
+  font-weight: bold;
+  padding: 0 1.5rem 0 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+li a {
+  color: #124351;
+  transition: color 0.2s ease;
+}
+
+li a:hover {
+  color: #478091;
+  transition: color 0.2s ease;
+}
+
+li {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.email {
+  text-decoration: underline;
+}
+
+a.phone {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 60rem;
+}
+
+.mobile {
+  display: none !important;
+}
+
+/* FlexBox Classes */
+.flex-container {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.ai-stretch {
+  align-items: stretch;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.fd-col {
+  flex-direction: column;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+#introduction {
+  padding-top: 168px;
+}
+
+.header-top {
+  height: 8rem;
+  background-color: #124351;
+}
+
+.header-bottom {
+  height: 2.5rem;
+  background-color: #D5E7E9;
+
+}
+
+nav .container {
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.header-top img {
+  position: relative;
+  top: .5rem;
+}
+
+/* Header Section*/
+#rsvp {
+  color: white;
+  background-color: #124351;
+  padding: .2rem 2rem;
+  border-radius: .4rem;
+  transition: background-color 0.2s ease;
+}
+
+#rsvp:hover {
+  background-color: #478091;
+  transition: background-color 0.2s ease;
+}
+
+/* Context Boxes with Texture */
+.darkbox {
+  color: white;
+  background: url(../images/lace.png), #124351;
+  background-size: 30rem;
+}
+
+.pattern {
+
+  opacity: 0.5;
+  background-size: 300px 100px;
+}
+
+/* Introduction Section */
+#introduction .container {
+  height: 35rem;
+}
+
+#intro-image {
+  width: 30rem;
+  height: 20rem;
+  position: relative;
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+.mySlides_a img {
+  border-radius: 1rem;
+}
+
+.mySlides_b img {
+  border-radius: 1rem;
+}
+
+#intro-text {
+  width: 30rem;
+  height: 20rem;
+  box-sizing: border-box;
+  padding: 0 2rem 0 2rem;
+  position: relative;
+  top: 1.5rem;
+  right: 1.5rem;
+  border-radius: 1rem;
+}
+
+#intro-text h1 {
+  margin-bottom: .5rem;
+}
+
+/* Supplementary Section */
+#supplementary {
+  background-color: #D5E7E9;
+}
+
+#supplementary .container {
+  box-sizing: border-box;
+  padding: 0 1.5rem;
+}
+
+#supplementary-text {
+  width: 25rem;
+  height: auto;
+  box-sizing: border-box;
+  color: #124351;
+  padding-right: 1.5rem;
+}
+
+#supplementary-text h1 {
+  margin-bottom: .5rem;
+}
+
+#supplementary-image {
+  width: 30rem;
+  height: auto;
+  margin: 1.5rem 0;
+}
+
+/* Actions Section */
+#actions .container {
+  box-sizing: border-box;
+  padding: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.first-card {
+  margin-bottom: 1.5rem;
+}
+
+.card {
+  box-sizing: border-box;
+  padding: 2rem;
+  width: 27.75rem;
+  border-radius: 1rem;
+}
+
+#registry-card {
+}
+
+#rsvp-card {
+  height: 100%;
+}
+
+#date-card {
+
+}
+
+#location-card {
+  height: 100%;
+}
+
+.guestField {
+  border-radius: .5rem;
+  overflow: hidden;
+  margin: 1rem 0;
+}
+
+.guestField button {
+  height: 100%;
+  margin-top: 0;
+  padding: .5rem;
+  border-radius: 0;
+}
+
+.guestField input {
+  border-radius: 0;
+  margin: 0;
+}
+
+.error {
+  color: #fbe04b;
+  margin-bottom: 1.5rem;
+}
+
+.text h1 {
+  margin-bottom: .5rem;
+}
+
+.text {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.button-container {
+  text-align:center;
+}
+
+:focus {
+  outline: none;
+}
+
+.button {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  background-color: #D5E7E9;
+  color: #124351;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  transition: background-color 0.2s ease;
+  border-radius: .5rem;
+  min-width: 8rem;
+}
+
+.button:hover {
+  background-color: white;
+  transition: background-color 0.2s ease;
+}
+
+input {
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  margin: 1rem 0;
+  padding: .5rem;
+  border-radius: .5rem;
+  box-sizing: border-box;
+}
+
+input:disabled {
+  cursor: not-allowed;
+}
+
+button {
+  margin: 0 auto;
+  display: inline-block;
+  border: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  background-color: #D5E7E9;
+  color: #124351;
+  font-size: 1rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: .5rem;
+  transition: background-color 0.2s ease;
+  min-width: 8rem;
+}
+
+#answer_yes {
+  width: 50%;
+  margin-right: 1rem;
+}
+
+#answer_no {
+  width: 50%;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.2s ease;
+}
+
+.mapouter {
+  position:relative;
+  text-align:right;
+  height: 216px;
+  margin-top: 1rem;
+  width:100%;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none!important;
+  height: 216px;
+  width: 100%;
+  border-radius: .5rem;
+}
+
+
+/* Wedding Party Section */
+#wedding-party {
+  background-color: #D5E7E9;
+  color: #124351;
+}
+
+#wedding-party .container {
+  box-sizing: border-box;
+  padding: 2rem 0;
+}
+
+#wedding-party .container .text {
+  box-sizing: border-box;
+  width: 50%;
+  margin: 0 1.5rem;
+}
+
+.wp-card-container {
+  flex-wrap: wrap;
+  padding: .75rem;
+  justify-content: space-between;
+}
+
+.wp-card {
+  width: 14rem;
+  background-color: white;
+  padding: 2rem;
+  margin: .75rem;
+  border-radius: 1rem;
+}
+
+.wp-text h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
+.wp-text h3 {
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.wp-image {
+  margin: 1rem auto;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 1rem;
+  background-color: #124351;
+}
+
+/* Contact Section */
+#contact {
+  background-color: #124351;
+  color: white;
+}
+
+#contact .container .text {
+  box-sizing: border-box;
+}
+
+#contact .container {
+  box-sizing: border-box;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+#contact .info {
+  margin-top: 1.5rem;
+}
+
+#contact .info a {
+  color: white;
+}
+
+#contact i {
+  font-size: 3rem;
+  margin-right: 1rem;
+  color: #D5E7E9;
+}
+
+.success-container {
+  background-color: rgba(0,0,0,0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.success {
+  background-color: #D5E7E9;
+  color: #124351;
+  max-width: 27rem;
+  min-width: 10rem;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  border-radius: 1rem;
+}
+
+.success i {
+  font-size: 1.5rem;
+}
+
+.success i:hover {
+  cursor: pointer;
+}
+
+.success h1 {
+  margin-right: 1.5rem;
+}
+
+.shadow {
+  box-shadow: 0 5px 6px 2px rgba(0,0,0,0.3);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}

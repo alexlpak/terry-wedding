@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>David + Kay Wedding | RSVP List</title>
+
+    <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/rsvp-style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/effects.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/browser-compatibility.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700,700i|Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="resources/images/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header id="header">
+      <!-- Logo -->
+      <div class="flex-container ai-center jc-center bg-texture header-top darkbox">
+        <a class="flex-container ai-center jc-center" href="#"><img src="resources/images/David_Kay_Header.png" height="90px" width="auto"></a>
+      </div>
+
+      <!-- Navigation -->
+      <nav id="desktop-nav" class="flex-container header-bottom jc-center ai-center">
+        <ul class="rsvpContainer flex-container jc-center ai-center">
+          <li><a href="index.html" id="rsvp">BACK TO WEBSITE</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!-- Data Table -->
+
+
+
+    <!-- Data Table -->
+    <section id="rsvpDB" class="flex-container ai-center jc-center fd-col">
+
+      <div class="body flex-container ai-center jc-center rsvpContainer fd-col">
+        <div class="infoBox flex-container fd-col ai-center">
+          <h1>RSVP Analytics</h1>
+          <p>Use this page to monitor the status of RSVP's.</p>
+        </div>
+        <div class="infoBox">
+          <h2><strong>Guest Numbers</strong></h2>
+          <strong><span id="currentRSVP"></span></strong>
+          <span> out of&nbsp;</span><strong><span id="currentInvites"></span></strong>
+          <span> invited guests have RSVP'd.</span><br>
+          <span>There are&nbsp;</span><strong><span id="pendingRSVP"></span></strong>
+          <span> pending RSVP responses remaining.</span>
+          <div id="progressBar">
+            <div class="rsvpContainer flex-container">
+              <div class="complete"><strong><span id="completePercent"></span></strong></div>
+              <div class="missing"><strong><span id="missingPercent"></span></strong></div>
+            </div>
+          </div>
+          <span>Your&nbsp;</span><strong><span id="currentRSVP2"></span></strong>
+          <span> RSVP'd guests will be bringing a total of&nbsp;</span>
+          <strong><span id="guestCount"></span></strong>
+          <span> "plus-one" guests for a total number of&nbsp;</span>
+          <strong><span id="allGuests"></span></strong><span> guests.</span>
+        </div>
+        <input id="tableSearch" placeholder="Search Table..."></input>
+        <table id="tableData">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Allowed Guests</th>
+              <th>Reserved Guest Count</th>
+              <th>Reserved Guest Name(s)</th>
+              <th>Linked RSVP</th>
+              <th>Attending?</th>
+              <th>Last Updated</th>
+            </tr>
+          </thead>
+          <tbody id="searchable">
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+    <script src="resources/js/firebase.js"></script>
+    <script src="resources/js/rsvp-list.js"></script>
+    <script src="resources/js/header.js"></script>
+    <script src="resources/js/interactive.js"></script>
+
+  </body>
+</html>

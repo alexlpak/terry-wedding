@@ -1,0 +1,194 @@
+@media only screen and (max-width: 500px) {
+  .success h1 {
+    font-size: 1.5rem !important;
+  }
+
+  .header-top img {
+    max-width: 70%;
+    height: auto;
+  }
+
+  .header-top {
+    height: 4rem;
+  }
+
+  #contact i {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (max-width: 959px) {
+
+  .success h1 {
+    font-size: 2rem;
+  }
+
+  /* .flex-container {
+    flex-wrap: wrap;
+  } */
+
+  #introduction {
+    padding-top: 179px;
+  }
+
+  #intro-text {
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    top: unset;
+    right: unset;
+    height: auto;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  body {
+    width: 100%;
+  }
+
+  .mobile {
+    display: block !important;
+  }
+
+  #mobile-nav {
+    padding: .75rem;
+  }
+
+  #mobile-nav ul {
+    display: none !important;
+  }
+
+  #mobile-nav div {
+    width: 100%;
+  }
+
+  #mobile-nav i {
+    font-size: 1.7rem;
+    color: #124351;
+    text-align: center;
+  }
+
+  #mobile-nav:hover {
+    cursor: pointer;
+  }
+
+  #mobile-nav-list {
+    margin-top: 1rem;
+  }
+
+  #desktop-nav {
+    display: none;
+  }
+
+  .header-top {
+    height: 8rem;
+  }
+
+  .header-bottom {
+    height: auto;
+  }
+
+  nav .container li {
+    font-size: 1.2rem;
+    text-align: center;
+    display: grid;
+    margin: .5rem;
+  }
+
+  nav .container li:active {
+    background-color: color: #124351;
+    color: white;
+  }
+
+  #introduction .container {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  #intro-image {
+    position: relative;
+    bottom: unset;
+    left: unset;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+
+
+  .container {
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  #actions .container {
+    justify-content: center;
+    padding: 1.5rem 1.5rem 0 1.5rem;;
+  }
+
+  #supplementary .container {
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    padding: 1.5rem;
+  }
+
+  #supplementary-text {
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  #supplementary-image {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .slideshow-container {
+    width: 100%;
+  }
+
+  .first-card {
+    margin-bottom: 0;
+  }
+
+  .card {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  #wedding-party .container .text {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  #wedding-party .container {
+    padding: 1.5rem 1.5rem 0 1.5rem;
+  }
+
+  .wp-card-container {
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  .wp-card {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .wp-card .flex-container {
+    justify-content: unset !important;
+  }
+
+  #contact .container .text {
+    width: 100%;
+  }
+
+  #contact i {
+    font-size: 2rem;
+  }
+}

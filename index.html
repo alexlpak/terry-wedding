@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>David + Kay Wedding | Home</title>
+
+    <link rel="stylesheet" type="text/css" href="resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/effects.css">
+    <link rel="stylesheet" type="text/css" href="resources/css/browser-compatibility.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:700,700i|Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="resources/images/favicon.ico">
+    <script src="resources/js/imask.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header id="header">
+      <!-- Logo -->
+      <div class="flex-container ai-center jc-center bg-texture header-top darkbox">
+        <a class="flex-container ai-center jc-center" href="#"><img src="resources/images/David_Kay_Header.png" height="90px" width="auto"></a>
+      </div>
+
+      <!-- Navigation -->
+      <nav id="desktop-nav" class="flex-container header-bottom jc-center ai-center">
+        <ul class="container flex-container jc-sb">
+          <li><a href="#rsvp-card" id="rsvp">RSVP</a></li>
+          <li><a href="#date-card">DATE/DETAILS</a></li>
+          <li><a href="#registry-card">REGISTRY</a></li>
+          <li><a href="#wedding-party">WEDDING PARTY</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+      <!-- Mobile Navigation -->
+      <nav onclick="navToggle()" id="mobile-nav" class="flex-container header-bottom jc-center ai-center mobile">
+        <div class="flex-container jc-center"><i class="fas fa-bars"></i></div>
+        <ul class="container flex-container fd-col ai-center mobile" id="mobile-nav-list">
+          <li><a href="#rsvp-card" id="rsvp">RSVP</a></li>
+          <li><a href="#date-card">DATE/DETAILS</a></li>
+          <li><a href="#registry-card">REGISTRY</a></li>
+          <li><a href="#wedding-party">WEDDING PARTY</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!-- Introduction -->
+    <section id="introduction" class="flex-container ai-center jc-center">
+      <div class="container flex-container ai-center jc-center">
+        <!-- Image -->
+        <div class="flex-container ai-center jc-center image" id="intro-image">
+          <div class="slideshow-container">
+            <div class="mySlides_a fade">
+              <img src="resources/images/1a_david+kay.jpg" style="width:100%">
+            </div>
+            <div class="mySlides_a fade">
+              <img src="resources/images/2a_david+kay.jpg" style="width:100%">
+            </div>
+            <div class="mySlides_a fade">
+              <img src="resources/images/3a_david+kay.jpg" style="width:100%">
+            </div>
+            <div class="mySlides_a fade">
+              <img src="resources/images/4a_david+kay.jpg" style="width:100%">
+            </div>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="flex-container fd-col jc-center bg-texture darkbox" id="intro-text">
+          <h1>We're Getting Married!</h1>
+          <p>Kay and David met in the spring of 2013 in the first class David attended at Del City High School.<br><br>Throughout high school, they remained friends. They kept in contact in college and remained friends but did not communicate frequently. In the Spring of 2018, they met at the wedding of their mutual friends. </p>
+      </div>
+    </section>
+
+
+    <!-- Supplementary Section -->
+    <section id="supplementary" class="flex-container ai-center jc-center">
+      <div class="container flex-container ai-center jc-sb">
+        <!-- Text -->
+        <div class="flex-container fd-col jc-center" id="supplementary-text">
+          <!-- <h1>The Story Continues</h1> -->
+          <p>After meeting at the wedding, they spent many evenings hanging out with each other and talking on the phone. Soon they made it “Facebook official” and began attending church together, spending time with each other’s family, and even got a cat named Doc.
+Both Kay and David graduate from university in December, and will be pursuing their master's degrees in the fall of 2020.</p>
+        </div>
+
+        <!-- Image -->
+        <div class="flex-container ai-center jc-center image" id="supplementary-image">
+          <div class="slideshow-container">
+            <div class="mySlides_b fade">
+              <img src="resources/images/1b_david+kay.jpg" style="width:100%">
+            </div>
+            <div class="mySlides_b fade">
+              <img src="resources/images/2b_david+kay.jpg" style="width:100%">
+            </div>
+            <div class="mySlides_b fade">
+              <img src="resources/images/3b_david+kay.jpg" style="width:100%">
+            </div>
+            <div class="mySlides_b fade">
+              <img src="resources/images/4b_david+kay.jpg" style="width:100%">
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Actions Section -->
+    <section id="actions" class="flex-container ai-center jc-center">
+      <div class="container flex-container">
+
+
+        <!-- Registry Card -->
+        <div id="registry-card" class="darkbox card first-card">
+          <div class="flex-container fd-col jc-sb text">
+            <h1>Registry</h1>
+            <p>Celebrating with you on our special day is the only gift we require. However, for your convenience, we have registered at (store name) for the items we’d find the most useful as we prepare for married life! You can view our registry here:</p>
+            <div class="button-container">
+            <a href="#" class="button">View Registry</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Date Card -->
+        <div id="date-card" class="darkbox card first-card">
+          <div class="flex-container fd-col text">
+            <h1>Date &amp; Details</h1>
+            <p>The wedding will take place on January 4, 2020 @ 2 PM with a reception to follow.<br><br>Please note that the wedding attire is semi-formal.</p>
+          </div>
+        </div>
+
+        <!-- RSVP Card -->
+        <div id="rsvp-card" class="darkbox card">
+          <div class="flex-container fd-col text">
+            <h1>RSVP</h1>
+            <p>Please enter your first and last name to look up your RSVP.</p><br>
+            <div class="userInput">
+              <p class="error" style="display: none;"></p>
+              <span>First and Last Name:</span>
+              <input type="text" id="rsvpName" value="" placeholder=""><br>
+              <div class="guestInput" style="display: none;">
+                <span>Guest First and Last Name: </span>
+                <div class="guestField flex-container ai-center">
+                  <input type="text" id="guestName" value="" style="width: 80%">
+                  <button class="addGuest" type="button" name="guestButton" onclick="addGuestField()" style="width: 20%"><i class="fas fa-plus"></i></button>
+                </div>
+              </div>
+            </div>
+            <button id="lookupRSVP" onclick="findRSVP()" style="display: block;">Look Up RSVP</button>
+            <button id="submitRSVP" style="display: none;">Submit RSVP</button>
+            <div class="flex-container ai-center jc-sb" id="answers" style="display: none;">
+              <button id="answer_yes">Yes</button>
+              <button id="answer_no">No</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Location Card -->
+        <div id="location-card" class="darkbox card">
+          <div class="flex-container fd-col jc-sb text">
+            <h1>Location</h1>
+            <p>Meadowood Baptist Church<br>2816 N Woodcrest Dr, Midwest City, OK 73110</p>
+            <div class="mapouter">
+              <div class="gmap_canvas">
+                <iframe width="100%" height="216px" id="gmap_canvas" src="https://maps.google.com/maps?q=2816%20N%20Woodcrest%20Dr%2C%20Midwest%20City%2C%20OK%2073110&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                </iframe>
+              </div>
+            </div>
+            <div class="button-container">
+              <button onclick="mapsSelector()">Get Directions</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- Wedding Party Section -->
+    <section id="wedding-party" class="flex-container ai-center jc-center">
+      <div class="container flex-container fd-col">
+
+        <div class="text">
+          <h1>Wedding Party</h1>
+          <p>Get to know the wedding party!</p>
+        </div>
+
+        <div class="wp-card-container flex-container ai-stretch">
+
+          <div class="wp-card">
+            <div class="flex-container ai-center jc-center">
+
+            </div>
+            <div class="wp-text">
+              <h2>Maid of Honor:</h2>
+              <h3>Andrietta Howell</h3>
+              <p>Andrietta is Kay’s older sister. They are two and a half years apart and spent most of their lives at each other's throats, but have since realized the value of family. Kay is very grateful to have Andrietta as her sister and therefore desired to have her as her maid of honor.</p>
+            </div>
+          </div>
+          <div class="wp-card">
+            <div class="flex-container ai-center jc-center">
+
+            </div>
+            <div class="wp-text">
+              <h2>Bridesmaid:</h2>
+              <h3>Charlee Rotrock</h3>
+              <p>Charlee and Kay met their sophomore year of High School while being in color guard. After spending a lot of time together during band and outside of school they became really good friends. Charlee has always been an inspiration and role model to Kay which is why she was picked to be a bridesmaid.</p>
+            </div>
+          </div>
+          <div class="wp-card">
+            <div class="flex-container ai-center jc-center">
+
+            </div>
+            <div class="wp-text">
+              <h2>Bridesmaid:</h2>
+              <h3>Beverly McCrae</h3>
+              <p>Beverly and Kay also met their sophomore year of high school while being in color guard together. Their families became friends over the years through band and loaning yard equipment to each other. Beverly has always been such a free spirit that Kay has cherished since they met, which is why she was chosen to be a bridesmaid.</p>
+            </div>
+          </div>
+          <div class="wp-card">
+            <div class="flex-container ai-center jc-center">
+
+            </div>
+            <div class="wp-text">
+              <h2>Best Man:</h2>
+              <h3>Jonathan Terry</h3>
+              <p>Jonathan is David’s little brother. Since birth, David has always wanted to “teach Jonathan everything he knows.” Jonathan has always been David’s best friend. Despite a vast amount of teasing and often working hard to make Jonathan as uncomfortable as possible, they love each other immensely and would do anything for each other.</p>
+            </div>
+          </div>
+          <div class="wp-card">
+            <div class="flex-container ai-center jc-center">
+
+            </div>
+            <div class="wp-text">
+              <h2>Groomsman:</h2>
+              <h3>Caleb Shaw</h3>
+              <p>David met Caleb during his freshman year at UCO. Both of them were in the President's Leadership Council and lived on the third floor of Murdaugh Hall. They have gone on many late night adventures, as well as an Arkansas adventure. Caleb has been a loyal friend, companion, and confidant throughout David’s college career.</p>
+            </div>
+          </div>
+          <div class="wp-card">
+            <div class="flex-container ai-center jc-center">
+
+            </div>
+            <div class="wp-text">
+              <h2>Groomsman:</h2>
+              <h3>Phillip Knisely</h3>
+              <p>Philip has been one of David’s best friends since the sixth grade at Monroney middle school. They have shared laughs, hard times, and watch each other grow from sixth graders to university seniors. Despite the distance between the two of them, Philip in Wisconsin and David in Oklahoma, the two still keep in regular contact. They make sure that the other always knows major events going on in their lives.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="flex-container ai-center jc-center darkbox">
+      <div class="container flex-container fd-col">
+        <div class="text">
+          <h1>Contact</h1>
+          <p>Feel free to reach out with any questions you may have!</p>
+        </div>
+
+        <div class="flex-container info ai-center">
+          <i class="fas fa-mobile-alt"></i>
+          <span>Kay:&nbsp;</span><a class="phone" href="tel:4057067057">(405) 706-7057</a>
+        </div>
+        <div class="flex-container info ai-center">
+          <i class="fas fa-envelope"></i>
+          <a class="email" href="mailto:kayanddavidterry@gmail.com">kayanddavidterry@gmail.com</a>
+        </div>
+        <div class="flex-container info ai-center">
+          <i class="fas fa-home"></i>
+          <span>4516 SE 25th St. Del City, OK 73115</span>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="flex-container ai-center jc-center success-container" style="display: none;">
+      <div class="success">
+        <div class="flex-container jc-sb ai-center"><h1>Success!</h1><i class="fas fa-times" onclick="exitPrompt()"></i></div><br>
+        <p>Your RSVP was submitted successfully!<br>Please screenshot this page for your records.</p><br>
+        <strong><span>Your Response: </span></strong><br><span id="success-response"></span><br><br>
+        <strong><span>Date: </span></strong><br>
+        <span id="todays-date"></span><br><br>
+        <strong><span>RSVP Name(s): </span></strong><br><span id="success-name"></span><br><br>
+        <div id="guestSection"><strong><span>Guest(s) Name: </span></strong><br><span id="success-guestName"></span>
+      </div>
+    </div>
+
+    <script src="resources/js/slideshow.js"></script>
+
+    <script>
+      function mapsSelector() {
+        if /* if we're on iOS, open in Apple Maps */
+          ((navigator.platform.indexOf("iPhone") != -1) ||
+           (navigator.platform.indexOf("iPod") != -1) ||
+           (navigator.platform.indexOf("iPad") != -1))
+          window.open("maps://maps.google.com/?q=2816 N Woodcrest Dr, Midwest City, OK 73110");
+
+        else /* else use Google */
+          window.open("http://maps.google.com/?q=2816 N Woodcrest Dr, Midwest City, OK 73110");
+      }
+    </script>
+
+    <script>
+      // Mobile Nav Hamburger Toggle
+      var isToggled = 0;
+      function navToggle() {
+        if (isToggled == 0) {
+          document.getElementById('mobile-nav-list').setAttribute('style', 'display:flex !important');
+          isToggled = 1;
+        }
+        else if (isToggled == 1) {
+          document.getElementById('mobile-nav-list').setAttribute('style', 'display:none !important');
+          isToggled = 0;
+        }
+      }
+    </script>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+    <script src="resources/js/firebase.js"></script>
+    <script src="resources/js/rsvp.js"></script>
+    <script src="resources/js/header.js"></script>
+    <script src="resources/js/interactive.js"></script>
+
+
+  </body>
+</html>

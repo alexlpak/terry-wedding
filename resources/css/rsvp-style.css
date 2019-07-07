@@ -1,0 +1,175 @@
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin-bottom: 1rem;
+}
+
+.rsvpContainer {
+  max-width: 100rem;
+}
+
+#rsvpDB {
+  padding-top: 168px;
+}
+
+#rsvpDB .body {
+  box-sizing: border-box;
+  padding: 1.5rem;
+}
+
+.rsvpEntry {
+  margin: 1.5rem;
+  padding: 1.5rem;
+  color: #124351;
+  background-color: #beffba;
+  box-sizing: border-box;
+}
+
+.rsvpEntry .name {
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+.rsvpEntry .guestName {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-left: 1.5rem;
+}
+
+.rsvpStatus {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-left: 1.5rem;
+}
+
+.tableData {
+  max-width: 100%;
+}
+
+#tableSearch {
+  background-color: #D5E7E9;
+  color: #124351;
+}
+
+#tableSearch::placeholder {
+  color: #124351;
+}
+
+table {
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+tbody {
+  border-radius: 1rem;
+}
+
+table th {
+  background-color: #124351;
+  padding: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+table td {
+  text-align: center;
+  padding: 1.5rem;
+  font-weight: bold;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+#rsvpGuest {
+  text-align: left;
+  font-weight: normal;
+}
+
+#rsvpName {
+  text-align: left;
+}
+
+table tr:nth-child(2n) {
+  background-color: #D5E7E9;
+}
+
+select {
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: #124351;
+  color: #ffffff;
+  border-radius: .5rem;
+  font-size: 1rem;
+  width: 100%;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+select option {
+  border: none;
+  background-color: #ffffff;
+  color: #124351;
+  font-family: font-family: 'Open Sans', sans-serif;
+}
+
+.fa-check {
+  color: #008001;
+  font-size: 1.5rem;
+}
+
+.fa-times {
+  color: #124351;
+  font-size: 1.5rem;
+}
+
+#progressBar {
+  box-sizing: border-box;
+  width: 100%;
+  height: 1.5rem;
+  margin: 1rem 0;
+}
+
+#progressBar .rsvpContainer {
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.infoBox {
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  color: #124351;
+  text-align: center;
+  background-color: #ffffff;
+  border: 2px solid #D5E7E9;
+}
+
+.infoBox:nth-child(1) {
+  margin-top: 0;
+}
+
+.missing {
+  background-color: #D5E7E9;
+  height: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.complete {
+  background-color: #124351;
+  height: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+.progressBarInfo {
+  margin-top: 1.5rem;
+}
