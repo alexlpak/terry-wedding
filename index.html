@@ -40,7 +40,7 @@
       <!-- Mobile Navigation -->
       <nav onclick="navToggle()" id="mobile-nav" class="flex-container header-bottom jc-center ai-center mobile">
         <div class="flex-container jc-center"><i class="fas fa-bars"></i></div>
-        <ul class="container flex-container fd-col ai-center mobile" id="mobile-nav-list">
+        <ul class="container flex-container fd-col ai-center" id="mobile-nav-list" style="display: none;">
           <li><a href="#rsvp-card" id="rsvp">RSVP</a></li>
           <li><a href="#date-card">DATE/DETAILS</a></li>
           <li><a href="#registry-card">REGISTRY</a></li>
@@ -305,21 +305,6 @@
 
         else /* else use Google */
           window.open("http://maps.google.com/?q=2816 N Woodcrest Dr, Midwest City, OK 73110");
-      }
-    </script>
-
-    <script>
-      // Mobile Nav Hamburger Toggle
-      var isToggled = 0;
-      function navToggle() {
-        if (isToggled == 0) {
-          document.getElementById('mobile-nav-list').setAttribute('style', 'display:flex !important');
-          isToggled = 1;
-        }
-        else if (isToggled == 1) {
-          document.getElementById('mobile-nav-list').setAttribute('style', 'display:none !important');
-          isToggled = 0;
-        }
       }
     </script>
 

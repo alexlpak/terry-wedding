@@ -71,3 +71,8 @@ function isElementInViewport(el) {
         rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
     );
 }
+
+function navToggle() {
+  $('#mobile-nav-list').slideToggle();
+  console.log('yes');
+}
