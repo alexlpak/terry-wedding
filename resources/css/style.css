@@ -20,6 +20,20 @@ h1, h2, h3 {
   line-height: 1.2;
 }
 
+.confetti-canvas {
+  height: 100%;
+  width: 100%;
+  bottom: 0rem;
+}
+
+#my-canvas {
+  position: fixed;
+}
+
+#hashtag:hover {
+  cursor: pointer;
+}
+
 h1 {
   font-size: 2rem;
 }
@@ -253,6 +267,8 @@ nav .container {
   padding: 2rem;
   width: 27.75rem;
   border-radius: 1rem;
+  z-index: 100;
+  position: relative;
 }
 
 /* .card:nth-last-of-type(-n+2) {
@@ -472,6 +488,8 @@ button:hover {
 
 #contact .info {
   margin-top: 1.5rem;
+  z-index: 100;
+  position: relative;
 }
 
 #contact .info a {

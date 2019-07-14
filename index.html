@@ -279,13 +279,13 @@
             <span>4516 SE 25th St. Del City, OK 73115</span>
           </div>
           <div class="flex-container info ai-center hashtag-container">
-            <img src="resources/images/hashtag.png" height="50px" width="auto">
+            <img src="resources/images/hashtag.png" id="hashtag" onclick="runConfetti()" height="50px" width="auto">
           </div>
         </div>
 
       </div>
     </section>
-
+    <canvas id="my-canvas"></canvas>
     <div class="flex-container ai-center jc-center success-container" style="display: none;">
       <div class="success">
         <div class="flex-container jc-sb ai-center"><h1>Success!</h1><i class="fas fa-times" onclick="exitPrompt()"></i></div><br>
@@ -300,6 +300,18 @@
 
     <script src="resources/js/slideshow.js"></script>
 
+    <script src="./resources/js/confetti.min.js"></script>
+
+    <script>
+    var confettiSettings = {
+      target: 'my-canvas'
+    };
+    var confetti = new ConfettiGenerator(confettiSettings);
+    function runConfetti() {
+      $('#my-canvas').addClass("confetti-canvas");
+      confetti.render();
+    }
+    </script>
     <script>
       function mapsSelector() {
         if /* if we're on iOS, open in Apple Maps */
