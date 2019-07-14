@@ -9,6 +9,10 @@ p::selection { background: #D5E7E9; }
 
 body {
   font-family: 'Open Sans', sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 h1, h2, h3 {
@@ -514,4 +518,22 @@ button:hover {
 
 .shadow {
   box-shadow: 0 5px 6px 2px rgba(0,0,0,0.3);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
 }
