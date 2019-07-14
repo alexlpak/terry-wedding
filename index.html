@@ -86,8 +86,7 @@
         <!-- Text -->
         <div class="flex-container fd-col jc-center" id="supplementary-text">
           <!-- <h1>The Story Continues</h1> -->
-          <p>After meeting at the wedding, they spent many evenings hanging out with each other and talking on the phone. Soon they made it “Facebook official” and began attending church together, spending time with each other’s family, and even got a cat named Doc.
-Both Kay and David graduate from university in December, and will be pursuing their master's degrees in the fall of 2020.</p>
+          <p>After meeting at the wedding, they spent many evenings hanging out with each other and talking on the phone. Soon they made it “Facebook official” and began attending church together, spending time with each other’s family, and even got a cat named Doc. Both Kay and David graduate from university in December, and will be pursuing their master's degrees in the fall of 2020.</p>
         </div>
 
         <!-- Image -->
@@ -112,72 +111,73 @@ Both Kay and David graduate from university in December, and will be pursuing th
     <!-- Actions Section -->
     <section id="actions" class="flex-container ai-center jc-center">
       <div class="container flex-container">
-
-
-        <!-- Registry Card -->
-        <div id="registry-card" class="darkbox card first-card">
-          <div class="flex-container fd-col jc-sb text">
-            <h1>Registry</h1>
-            <p>Celebrating with you on our special day is the only gift we require. However, for your convenience, we have registered at (store name) for the items we’d find the most useful as we prepare for married life! You can view our registry here:</p>
-            <div class="button-container">
-            <a href="#" class="button">View Registry</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Date Card -->
-        <div id="date-card" class="darkbox card first-card">
-          <div class="flex-container fd-col text">
-            <h1>Date &amp; Details</h1>
-            <p>The wedding will take place on January 4, 2020 @ 2 PM with a reception to follow.<br><br>Please note that the wedding attire is semi-formal.</p>
-          </div>
-        </div>
-
-        <!-- RSVP Card -->
-        <div id="rsvp-card" class="darkbox card">
-          <div class="flex-container fd-col text">
-            <h1>RSVP</h1>
-            <p>Please enter your first and last name to look up your RSVP.</p><br>
-            <div class="userInput">
-              <p class="error" style="display: none;"></p>
-              <span>First and Last Name:</span>
-              <input type="text" id="rsvpName" value="" placeholder=""><br>
-              <div class="guestInput" style="display: none;">
-                <span>Guest First and Last Name: </span>
-                <div class="guestField flex-container ai-center">
-                  <input type="text" id="guestName" value="" style="width: 80%">
-                  <button class="addGuest" type="button" name="guestButton" onclick="addGuestField()" style="width: 20%"><i class="fas fa-plus"></i></button>
+        <div class="flex-container flex-wrap ai-fs fd-col" style="height: -webkit-fill-available; width: 100%;">
+          <!-- Registry Card -->
+          <div id="registry-card" class="darkbox card">
+            <div class="flex-container fd-col text">
+              <h1>Registry</h1>
+              <p>Celebrating with you on our special day is the only gift we require. However, for your convenience, we have registered at Amazon and Target for the items we’d find the most useful as we prepare for married life! You can view our registry here:</p>
+              <div class="flex-container fd-col">
+                <div class="button-container">
+                  <a href="https://www.target.com/gift-registry/gift/c2b53d249eb647a8b6b99bd43266608c" class="button" target="_blank"><img src="resources/images/target-logo.svg" alt=""></a>
+                </div>
+                <div class="button-container">
+                  <a href="https://www.amazon.com/wedding/david-terry-kaylin-howell-midwest-city-january-2020/registry/37UJNKXTGP2A4" class="button" target="_blank"><img src="resources/images/amazon-logo.svg" alt=""></a>
                 </div>
               </div>
-            </div>
-            <button id="lookupRSVP" onclick="findRSVP()" style="display: block;">Look Up RSVP</button>
-            <button id="submitRSVP" style="display: none;">Submit RSVP</button>
-            <div class="flex-container ai-center jc-sb" id="answers" style="display: none;">
-              <button id="answer_yes">Yes</button>
-              <button id="answer_no">No</button>
+
             </div>
           </div>
-        </div>
-
-        <!-- Location Card -->
-        <div id="location-card" class="darkbox card">
-          <div class="flex-container fd-col jc-sb text">
-            <h1>Location</h1>
-            <p>Meadowood Baptist Church<br>2816 N Woodcrest Dr, Midwest City, OK 73110</p>
-            <div class="mapouter">
-              <div class="gmap_canvas">
-                <iframe width="100%" height="216px" id="gmap_canvas" src="https://maps.google.com/maps?q=2816%20N%20Woodcrest%20Dr%2C%20Midwest%20City%2C%20OK%2073110&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-                </iframe>
+          <!-- RSVP Card -->
+          <div id="rsvp-card" class="darkbox card">
+            <div class="flex-container fd-col text">
+              <h1>RSVP</h1>
+              <p>Please enter your first and last name to look up your RSVP.</p><br>
+              <div class="userInput">
+                <p class="error" style="display: none;"></p>
+                <span>First and Last Name:</span>
+                <input type="text" id="rsvpName" value="" placeholder=""><br>
+                <div class="guestInput" style="display: none;">
+                  <span>Guest First and Last Name: </span>
+                  <div class="guestField flex-container ai-center">
+                    <input type="text" id="guestName" value="" style="width: 80%">
+                    <button class="addGuest" type="button" name="guestButton" onclick="addGuestField()" style="width: 20%"><i class="fas fa-plus"></i></button>
+                  </div>
+                </div>
+              </div>
+              <button id="lookupRSVP" onclick="findRSVP()" style="display: block;">Look Up RSVP</button>
+              <button id="submitRSVP" style="display: none;">Submit RSVP</button>
+              <div class="flex-container ai-center jc-sb" id="answers" style="display: none;">
+                <button id="answer_yes">Yes</button>
+                <button id="answer_no">No</button>
               </div>
             </div>
-            <div class="button-container">
-              <button onclick="mapsSelector()">Get Directions</button>
+          </div>
+          <!-- Date Card -->
+          <div id="date-card" class="darkbox card">
+            <div class="flex-container fd-col text">
+              <h1>Date &amp; Details</h1>
+              <p>The wedding will take place on <strong>January 4, 2020 @ 2 PM</strong> with a reception to follow.<br><br>Please note that the wedding attire is semi-formal.</p>
+            </div>
+          </div>
+          <!-- Location Card -->
+          <div id="location-card" class="darkbox card">
+            <div class="flex-container fd-col text">
+              <h1>Location</h1>
+              <p>Meadowood Baptist Church<br>2816 N Woodcrest Dr, Midwest City, OK 73110</p>
+              <div class="mapouter">
+                <div class="gmap_canvas">
+                  <iframe width="100%" height="216px" id="gmap_canvas" src="https://maps.google.com/maps?q=2816%20N%20Woodcrest%20Dr%2C%20Midwest%20City%2C%20OK%2073110&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                  </iframe>
+                </div>
+              </div>
+              <div class="button-container">
+                <button onclick="mapsSelector()">Get Directions</button>
+              </div>
             </div>
           </div>
         </div>
-
       </div>
-
     </section>
 
     <!-- Wedding Party Section -->

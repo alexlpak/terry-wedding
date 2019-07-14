@@ -81,6 +81,10 @@ a.phone {
   display: flex;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .jc-center {
   justify-content: center;
 }
@@ -91,6 +95,10 @@ a.phone {
 
 .ai-stretch {
   align-items: stretch;
+}
+
+.ai-fs {
+  align-items: flex-start;
 }
 
 .jc-sb {
@@ -228,8 +236,8 @@ nav .container {
 #actions .container {
   box-sizing: border-box;
   padding: 1.5rem;
-  flex-wrap: wrap;
   justify-content: space-between;
+  flex: 1;
 }
 
 .first-card {
@@ -243,19 +251,24 @@ nav .container {
   border-radius: 1rem;
 }
 
+.card:nth-last-of-type(-n+2) {
+  margin-left: 1.5rem;
+}
+
+.card:nth-last-of-type(odd) {
+  margin-top: 1.5rem;
+}
+
 #registry-card {
 }
 
 #rsvp-card {
-  height: 100%;
 }
 
 #date-card {
-
 }
 
 #location-card {
-  height: 100%;
 }
 
 .guestField {
@@ -309,7 +322,11 @@ nav .container {
   margin-top: 1rem;
   transition: background-color 0.2s ease;
   border-radius: .5rem;
-  min-width: 8rem;
+  min-width: 10rem;
+}
+
+.button img {
+  width: 6rem;
 }
 
 .button:hover {
