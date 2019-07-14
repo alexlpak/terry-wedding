@@ -190,4 +190,12 @@
   #contact i {
     font-size: 2rem;
   }
+
+  .hashtag {
+    flex-direction: column;
+  }
+
+  .hashtag-container {
+    justify-content: center;
+  }
 }
