@@ -116,7 +116,7 @@ header {
 }
 
 #introduction {
-  padding-top: 168px;
+  padding-top: 10.5rem;
 }
 
 .header-top {
@@ -251,13 +251,13 @@ nav .container {
   border-radius: 1rem;
 }
 
-.card:nth-last-of-type(-n+2) {
+/* .card:nth-last-of-type(-n+2) {
   margin-left: 1.5rem;
 }
 
 .card:nth-last-of-type(odd) {
   margin-top: 1.5rem;
-}
+} */
 
 #registry-card {
 }
@@ -514,22 +514,4 @@ button:hover {
 
 .shadow {
   box-shadow: 0 5px 6px 2px rgba(0,0,0,0.3);
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
 }
