@@ -177,7 +177,7 @@
                 </div>
               </div>
               <div class="button-container">
-                <button onclick="mapsSelector()">Get Directions</button>
+                <button onclick="window.open('http://maps.google.com/?q=2816 N Woodcrest Dr, Midwest City, OK 73110', '_blank')">Get Directions</button>
               </div>
             </div>
           </div>
@@ -313,17 +313,6 @@
       function runConfetti() {
         $('#my-canvas').addClass("confetti-canvas");
         confetti.render();
-      }
-    </script>
-    <script>
-      function mapsSelector() {
-        if /* if we're on iOS, open in Apple Maps */
-          ((navigator.platform.indexOf("iPhone") != -1) ||
-           (navigator.platform.indexOf("iPad") != -1) ||
-           (navigator.platform.indexOf("iPod") != -1))
-          window.open("maps://maps.google.com/?q=2816 N Woodcrest Dr, Midwest City, OK 73110");
-      else /* else use Google */
-          window.open("http://maps.google.com/?q=2816 N Woodcrest Dr, Midwest City, OK 73110");
       }
     </script>
 
