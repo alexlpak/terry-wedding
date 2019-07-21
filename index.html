@@ -116,10 +116,13 @@
           <div id="registry-card" class="darkbox card first-card">
             <div class="flex-container fd-col text">
               <h1>Registry</h1>
-              <p>Celebrating with you on our special day is the only gift we require. However, for your convenience, we have registered at Amazon and Target for the items we’d find the most useful as we prepare for married life! You can view our registry here:</p>
+              <p>Celebrating with you on our special day is the only gift we require. However, for your convenience, we have registered at Target, Bed Bath & Beyond, and Amazon for the items we’d find the most useful as we prepare for married life! You can view our registry here:</p>
               <div class="flex-container fd-col">
                 <div class="button-container">
                   <a href="https://www.target.com/gift-registry/gift/c2b53d249eb647a8b6b99bd43266608c" class="button" target="_blank"><img src="resources/images/target-logo.svg" alt=""></a>
+                </div>
+                <div class="button-container">
+                  <a href="https://www.bedbathandbeyond.com/store/giftregistry/viewregistryguest/547773877?eventType=Wedding" class="button" target="_blank"><img src="resources/images/bedbathandbeyond_logo.svg" alt=""></a>
                 </div>
                 <div class="button-container">
                   <a href="https://www.amazon.com/wedding/david-terry-kaylin-howell-midwest-city-january-2020/registry/37UJNKXTGP2A4" class="button" target="_blank"><img src="resources/images/amazon-logo.svg" alt=""></a>
@@ -303,24 +306,23 @@
     <script src="./resources/js/confetti.min.js"></script>
 
     <script>
-    var confettiSettings = {
-      target: 'my-canvas'
-    };
-    var confetti = new ConfettiGenerator(confettiSettings);
-    function runConfetti() {
-      $('#my-canvas').addClass("confetti-canvas");
-      confetti.render();
-    }
+      var confettiSettings = {
+        target: 'my-canvas'
+      };
+      var confetti = new ConfettiGenerator(confettiSettings);
+      function runConfetti() {
+        $('#my-canvas').addClass("confetti-canvas");
+        confetti.render();
+      }
     </script>
     <script>
       function mapsSelector() {
         if /* if we're on iOS, open in Apple Maps */
           ((navigator.platform.indexOf("iPhone") != -1) ||
-           (navigator.platform.indexOf("iPod") != -1) ||
-           (navigator.platform.indexOf("iPad") != -1))
+           (navigator.platform.indexOf("iPad") != -1) ||
+           (navigator.platform.indexOf("iPod") != -1))
           window.open("maps://maps.google.com/?q=2816 N Woodcrest Dr, Midwest City, OK 73110");
-
-        else /* else use Google */
+      else /* else use Google */
           window.open("http://maps.google.com/?q=2816 N Woodcrest Dr, Midwest City, OK 73110");
       }
     </script>

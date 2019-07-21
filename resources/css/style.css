@@ -230,6 +230,7 @@ nav .container {
 #supplementary .container {
   box-sizing: border-box;
   padding: 0 1.5rem;
+  width: 100%;
 }
 
 #supplementary-text {
