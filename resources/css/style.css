@@ -5,14 +5,10 @@ html {
   scroll-behavior: smooth;
 }
 
-p::selection { background: #D5E7E9; }
+*::selection { background: #D5E7E9; }
 
 body {
   font-family: 'Open Sans', sans-serif;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 h1, h2, h3 {
