@@ -51,28 +51,37 @@ function exitPrompt() {
 $(document).ready(function(){
   $("#tableSearch").on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $("#searchable tr").filter(function() {
+    $("#tableData tr.tableRow").filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
 });
 
-// Detect if element in viewport
-function isElementInViewport(el) {
-    //special bonus for those using jQuery
-    if (typeof jQuery === "function" && el instanceof jQuery) {
-        el = el[0];
-    }
-    var rect = el.getBoundingClientRect();
-    return console.log(
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && /*or $(window).height() */
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth) /*or $(window).width() */
-    );
-}
-
 function navToggle() {
   $('#mobile-nav-list').slideToggle();
   console.log('yes');
+}
+
+$('#submitNewRSVP').click(function() {
+  if ($('#newName')[0].value && $('#newAllowedGuests')[0].value) {
+    addEntry($('#newName')[0].value.toLowerCase(), $('#newAllowedGuests')[0].value, $('#newLinkedRSVP')[0].value.toLowerCase());
+    alert('New entry added successfully!');
+  };
+  $('#newName')[0].value = '';
+  $('#newAllowedGuests')[0].value  = '';
+  $('#newLinkedRSVP')[0].value  = '';
+});
+
+function beginRemove() {
+  var name = event.target.parentElement.parentElement.getElementsByClassName('rsvpName')[0].innerText;
+  var linkedName = event.target.parentElement.parentElement.getElementsByClassName('linkedRSVP')[0].innerText;
+  if (confirm('Are you sure you want to delete the RSVP for ' + name + '?')) {
+    if (linkedName) {
+      if (confirm(name + "'s linked RSVP is " + linkedName + ". Do you want to delete the RSVP for them, too?")) {
+        removeEntry(linkedName.toLowerCase());
+      }
+    };
+    removeEntry(name.toLowerCase());
+  };
+
 }

@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather:700,700i|Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="resources/images/favicon.ico">
+    <script src="resources/js/imask.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   </head>
 
@@ -33,10 +34,6 @@
       </nav>
 
     </header>
-
-    <!-- Data Table -->
-
-
 
     <!-- Data Table -->
     <section id="rsvpDB">
@@ -65,27 +62,39 @@
           <span> "plus-one" guests for a total number of&nbsp;</span>
           <strong><span id="allGuests"></span></strong><span> guests.</span>
         </div>
-        <input id="tableSearch" placeholder="Search Table..."></input>
+        <div class="infoBox flex-container fd-col ai-center">
+          <h2>Add to RSVP List</h2>
+          <p>Click Add to RSVP List to add the new entry to the table below!<br>Users can be deleted from the table below by clicking the <strong>X</strong>.</p>
+          <input id="newName" type="text" name="" value="" placeholder="Enter RSVP First & Last Name">
+          <input id="newAllowedGuests" type="text" name="" value="" placeholder="Enter Number of Allowed Guests">
+          <input id="newLinkedRSVP" type="text" name="" value="" placeholder="Enter Linked RSVP First & Last Name (if applicable)">
+          <button id="submitNewRSVP" type="button" name="button">Add to RSVP List</button>
+
+        </div>
+        <input id="tableSearch" placeholder="Search Table...">
+          </div>
+        </div>
         <table id="tableData" class="flex-container fd-col">
           <tr>
-            <th>#</th>
-            <th>Name</th>
-            <th>Allowed Guests</th>
-            <th>Reserved Guest Count</th>
-            <th>Reserved Guest Name(s)</th>
-            <th>Linked RSVP</th>
-            <th>Attending?</th>
-            <th>Last Updated</th>
+              <th>#</th>
+              <th>Name</th>
+              <th>Allowed Guests</th>
+              <th>Reserved Guest Count</th>
+              <th>Reserved Guest Name(s)</th>
+              <th>Linked RSVP</th>
+              <th>Attending?</th>
+              <th>Last Updated</th>
+              <th>Remove Entry</th>
           </tr>
         </table>
       </div>
     </section>
 
-
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-database.js"></script>
+
     <script src="resources/js/firebase.js"></script>
     <script src="resources/js/rsvp-list.js"></script>
     <script src="resources/js/header.js"></script>

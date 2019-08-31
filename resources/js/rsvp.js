@@ -139,11 +139,6 @@ function mergeData(name1, name2, object) {
   updateDB(name2, object);
 }
 
-function mergeLinkedRSVP(name1, name2) {
-  updateDB(name1, entry_linkedRSVP(name2));
-  updateDB(name2, entry_linkedRSVP(name1));
-}
-
 function findRSVP() {
   removeError();
   for (i in rsvpArray) {
@@ -151,11 +146,7 @@ function findRSVP() {
     // if user input matches guestArray name
     if (rsvpArray[i] == getRSVPName()) {
       $("#rsvpName").prop('disabled', true);
-      for (x in rsvpList.rsvp) {
-        if(x && rsvpList.rsvp[x]["linked_RSVP"]) {
-          mergeLinkedRSVP(x, rsvpList.rsvp[x]["linked_RSVP"]);
-        }
-      }
+
       // if searched RSVP HAS a linked RSVP
       if (getLinkedRSVP(getRSVPName()) != "") {
         $('#rsvp-card .flex-container p')[0].innerText = 'RSVP found!';

@@ -6,7 +6,6 @@ firebase.database().ref().on('value', snap => {
 });
 
 function fillTable() {
-
   $('.tableRow').remove();
 
   function capitalizeWords(str) {
@@ -51,11 +50,23 @@ function fillTable() {
       if (j > 0) { guestOptions_print +=  '<br>' + (j+1) + ": " + capitalizeWords(currentGuestsRef[currentGuestsArray[j]]); };
     }
 
-    entry = $('<tr class="tableRow"><td id="rsvpCount">' + (i+1) + '</td><td id="rsvpName">'
-    + capitalizeWords(rsvpName) + '</td><td id="rsvpName">' + allowedGuests + '</td><td id="rsvpGuestCount">'
-    + rsvpGuestCount + '</td><td id="rsvpGuest">' +
-    guestOptions_print + '</td><td id="linkedRSVP">' + capitalizeWords(linkedRSVP) + '</td><td id="rsvpStatus">'
-    + rsvpStatus + '</td>' + '<td id="timeStamp">' + timeStamp + '</td></tr>');
+    // entry = $('<tr class="tableRow"><td id="rsvpCount">' + (i+1) + '</td><td id="rsvpName">'
+    // + capitalizeWords(rsvpName) + '</td><td id="rsvpName">' + allowedGuests + '</td><td id="rsvpGuestCount">'
+    // + rsvpGuestCount + '</td><td id="rsvpGuest">' +
+    // guestOptions_print + '</td><td id="linkedRSVP">' + capitalizeWords(linkedRSVP) + '</td><td id="rsvpStatus">'
+    // + rsvpStatus + '</td>' + '<td id="timeStamp">' + timeStamp + '</td></tr>');
+
+    entry = `<tr class="tableRow">
+    <td id="rsvpCount">${(i+1)}</td>
+    <td id="rsvpName" class="rsvpName">${capitalizeWords(rsvpName)}</td>
+    <td id="rsvpName">${allowedGuests}</td>
+    <td id="rsvpGuestCount">${rsvpGuestCount}</td>
+    <td id="rsvpGuest">${guestOptions_print}</td>
+    <td id="linkedRSVP" class="linkedRSVP">${capitalizeWords(linkedRSVP)}</td>
+    <td id="rsvpStatus">${rsvpStatus}</td>
+    <td id="timeStamp">${timeStamp}</td>
+    <td id="removeEntry"><i class="fas fa-times removeEntry" onclick="beginRemove()"></i></td>
+    </tr>`;
 
     if (i == rsvpArray.length-1) {
       var percentTotal = (completePercent + missingPercent);
@@ -81,3 +92,49 @@ function fillTable() {
     $('#tableData tbody').append(entry);
   }
 }
+
+function addEntry(name, allowedGuests, linkedRSVP) {
+  var firebaseRef = firebase.database().ref();
+  var fbGuestRef = firebaseRef.child("rsvp");
+  let newName = {
+      [name]: {
+        RSVP_status: "",
+        allowed_guests: allowedGuests,
+        guests: "",
+        lastUpdated: "",
+        linked_RSVP: linkedRSVP
+      }
+  };
+  if (linkedRSVP) {
+    let newLinked = {
+      [linkedRSVP]: {
+        RSVP_status: "",
+        allowed_guests: allowedGuests,
+        guests: "",
+        lastUpdated: "",
+        linked_RSVP: name
+      }
+    };
+    fbGuestRef.update(newLinked);
+  };
+  fbGuestRef.update(newName);
+}
+function removeEntry(name) {
+  var firebaseRef = firebase.database().ref();
+  var fbGuestRef = firebaseRef.child("rsvp").child(name);
+  fbGuestRef.remove();
+}
+
+function addMaskName(field) {
+  IMask(field, {mask: /^(?:\W*\w+\b){0,2}\W?$/});
+}
+
+function addMaskNumber(field) {
+  IMask(field, {mask: /^[0-9]*$/});
+}
+
+
+
+addMaskName($('#newName')[0]);
+addMaskNumber($('#newAllowedGuests')[0]);
+addMaskName($('#newLinkedRSVP')[0]);
